@@ -1,4 +1,4 @@
-name: Build_mt7986_ax6000
+name: Build_mt7986_ax6000_6.6
 
 on: 
   repository_dispatch:
