@@ -14,7 +14,7 @@ echo -e "msgstr \"网络存储\"" >> feeds/luci/modules/luci-base/po/zh_Hans/bas
 
 ##配置IP
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
-
+#sed -i 's/192.168.5.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 ##
 rm -rf ./feeds/extraipk/theme/luci-theme-argon-18.06
 rm -rf ./feeds/extraipk/theme/luci-app-argon-config-18.06
@@ -58,7 +58,8 @@ sed -i "s/MT7986_AX6000_5G/AX6000_5G/g" package/mtk/drivers/wifi-profile/files/m
 ##New WiFi
 sed -i "s/ImmortalWrt-2.4G/EasyWrt-2.4G/g" package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 sed -i "s/ImmortalWrt-5G/EasyWrt-5G/g" package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
-
+#sed -i "s/ImmortalWrt-2.4G/AX6000/g" package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
+#sed -i "s/ImmortalWrt-5G/AX6000_5G/g" package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 
 ##FQ全部调到VPN菜单
 sed -i 's/services/vpn/g' package/feeds/luci/luci-app-ssr-plus/luasrc/controller/*.lua
